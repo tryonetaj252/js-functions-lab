@@ -100,12 +100,12 @@ function longestStringInArray(arr) {
     let maxLength = 0 ;
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].length > maxLength) {
-            maxLength = longestStringInArray[i].length;
+            maxLength = arr[i].length;
         }
     }
     return maxLength;
 }
-console.log('Exercise 7 Result:',longestStringInArray)["red"]));
+console.log('Exercise 7 Result:',longestStringInArray(["red" ,"blue" ,"green"] ));
 
 /*
 Exercise 8: stringsLongerThan
@@ -115,7 +115,7 @@ Write a function called stringsLongerThan. It takes an array of strings and a nu
 Complete Exercise 8 in the space below:
 */
 function stringsLongerThan(arr, length) {
-    let result = [];
+    const result = []; // initializing an empty array
     for (let i = 0; i < arr.length; i++) {
         if (arr[i].length > length) {
             result.push(arr[i]);
@@ -123,10 +123,7 @@ function stringsLongerThan(arr, length) {
     }
     return result;
 }
-
-
-console.log('Exercise 8 Result:', );
-
+console.log(stringsLongerThan(['say', 'hello', 'in', 'the', 'morning'], 3)); // Output: ['hello', 'morning']
 
 
 
